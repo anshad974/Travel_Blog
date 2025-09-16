@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Maldives Paradise Escape — Travel Blog</title>
+  <style>
+    :root{
+      --brand-color:#0077b6;
+      --accent-color:#0284c7;
+      --light-bg:#f0f8ff;
+      --text:#222;
+      --muted:#5d6d7a;
+      --card:#ffffff;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family: "Segoe UI", Roboto, Arial, sans-serif;line-height:1.65;color:var(--text);background:#fff}
+    .container{width:90%;max-width:900px;margin:0 auto;padding:1.25rem}
+
+    header{background:var(--brand-color);color:#fff;padding:1rem 0;text-align:center}
+    header h1{font-size:1.6rem}
+
+    .post-header{margin:1.5rem 0;text-align:center}
+    .post-header h2{color:var(--brand-color);margin-bottom:.35rem}
+    .post-header .info{color:var(--muted);font-size:.95rem}
+
+    .post-image{width:100%;border-radius:10px;display:block;margin:1rem 0;height:420px;object-fit:cover}
+
+    .post-content{background:var(--card);padding:1rem 1.15rem;border-radius:10px;box-shadow:0 6px 20px rgba(2,6,23,.06);margin-bottom:1.25rem}
+    .post-content p{margin-bottom:1rem;color:var(--text)}
+
+    .author-box{display:flex;gap:1rem;align-items:center;background:var(--light-bg);padding:1rem;border-radius:10px;margin-bottom:1.5rem}
+    .author-box img{width:80px;height:80px;border-radius:50%;object-fit:cover}
+    .author-info h4{color:var(--brand-color);margin-bottom:.25rem}
+    .author-info p{color:var(--muted);font-size:.95rem;margin-bottom:.4rem}
+    .author-info a{color:var(--accent-color);text-decoration:none;font-weight:600}
+
+    .related{margin-top:1rem}
+    .related h3{color:var(--brand-color);margin-bottom:.75rem}
+    .related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+    .card{background:var(--card);border-radius:10px;overflow:hidden;box-shadow:0 6px 18px rgba(2,6,23,.06);transition:transform .25s}
+    .card:hover{transform:translateY(-6px)}
+    .card img{width:100%;height:140px;object-fit:cover;display:block}
+    .card .meta{padding:.7rem}
+    .card h4{color:var(--brand-color);margin-bottom:.3rem;font-size:1rem}
+    .card p{color:var(--muted);font-size:.9rem;margin-bottom:.6rem}
+
+    .btn{display:inline-block;background:var(--accent-color);color:#fff;padding:.45rem .8rem;border-radius:8px;text-decoration:none;font-size:.95rem}
+    .btn:hover{background:#025f8f}
+
+    footer{background:var(--brand-color);color:#fff;text-align:center;padding:1rem;margin-top:2rem}
+    @media (max-width:640px){
+      .post-image{height:240px}
+      .author-box{flex-direction:row;align-items:center}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Travel Blog</h1>
+  </header>
+
+  <main class="container">
+    <!-- Post Header -->
+    <div class="post-header">
+      <h2>Maldives Paradise Escape</h2>
+      <p class="info">By Admin • September 15, 2025 • Maldives</p>
+    </div>
+
+    <!-- Hero Image -->
+    <img class="post-image"
+         src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1400&auto=format&fit=crop"
+         alt="Maldives overwater bungalows and turquoise sea" />
+
+    <!-- Post Content -->
+    <article class="post-content">
+      <p>The Maldives is the picture of tropical perfection — endless turquoise lagoons, powder-white sandbanks, and overwater bungalows that sit above crystal-clear water. It’s the ideal destination for relaxation, snorkeling, and memorable sunsets.</p>
+
+      <p>Where to stay: choose an island resort that matches your style. For romance and privacy, pick a small private island with overwater villas. For budget-conscious travelers, look for guesthouses on local islands where you can still access beautiful beaches and island culture.</p>
+
+      <p>What to do: snorkeling and diving are world-class — expect to swim with manta rays, sea turtles, and colorful reef fish. Try a guided snorkeling trip to a protected reef or a night snorkel for an unforgettable experience. Don’t miss a sunset cruise; watching the sky melt into the ocean is a Maldives ritual.</p>
+
+      <p>Practical tips: pack reef-safe sunscreen, a lightweight sarong or cover-up, and a waterproof phone case. Respect local customs on inhabited islands (conservative dress in villages) and check resort transfer schedules — many require speedboat or seaplane transfers arranged in advance.</p>
+    </article>
+
+    <!-- Author Bio -->
+    <section class="author-box" aria-labelledby="author-name">
+      <img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Author photo — Maya" />
+      <div class="author-info">
+        <h4 id="author-name">Maya Shore</h4>
+        <p>Travel writer & marine hobbyist — I seek sun, sand, and sustainable marine experiences. I love photographing underwater life and sharing practical tips for ocean-aware travel.</p>
+        <a href="#" target="_blank" rel="noopener">Follow on Instagram</a>
+      </div>
+    </section>
+
+    <!-- Related Posts -->
+    <section class="related" aria-labelledby="related-heading">
+      <h3 id="related-heading">Related Posts</h3>
+      <div class="related-grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800&auto=format&fit=crop" alt="Trekking in Patagonia" />
+          <div class="meta">
+            <h4>Trekking in Patagonia</h4>
+            <p>Gear, routes, and tips for exploring windswept Patagonian trails.</p>
+            <a class="btn" href="patagonia.html">Read More</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://plus.unsplash.com/premium_photo-1691031428291-1db669413fa0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8RXhwbG9yaW5nJTIwVWJ1ZCUyMFRlbXBsZXN8ZW58MHx8MHx8fDA%3D" alt="Ubud Temples" />
+          <div class="meta">
+            <h4>Exploring Ubud Temples</h4>
+            <p>Cultural rituals, rice terraces and the spiritual side of Bali.</p>
+            <a class="btn" href="bali.html">Read More</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=800&auto=format&fit=crop" alt="Santorini Sunset" />
+          <div class="meta">
+            <h4>Santorini Sunsets</h4>
+            <p>Whitewashed villages, cliffside views and the best sunset spots.</p>
+            <a class="btn" href="santorini.html">Read More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Travel Blog — All Rights Reserved</p>
+  </footer>
+</body>
+</html>

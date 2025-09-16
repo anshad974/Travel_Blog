@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trekking in Patagonia — Travel Blog</title>
+  <style>
+    :root {
+      --brand-color: #0077b6;
+      --accent-color: #0096c7;
+      --light-bg: #f7f9fa;
+      --dark-text: #333;
+      --muted-text: #555;
+    }
+
+    * {margin:0; padding:0; box-sizing:border-box;}
+
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      line-height: 1.7;
+      background: #fff;
+      color: var(--dark-text);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: auto;
+      padding: 1rem 0;
+    }
+
+    header {
+      background: var(--brand-color);
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    header h1 { font-size: 1.8rem; }
+
+    /* Post Header */
+    .post-header {
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .post-header h2 {
+      margin-bottom: 0.5rem;
+      color: var(--brand-color);
+    }
+    .post-header .info {
+      font-size: 0.9rem;
+      color: var(--muted-text);
+    }
+
+    .post-image {
+      width: 100%;
+      border-radius: 10px;
+      margin: 1rem 0;
+      max-height: 420px;
+      object-fit: cover;
+    }
+
+    .post-content {
+      font-size: 1.05rem;
+      margin-bottom: 2rem;
+      color: var(--dark-text);
+    }
+    .post-content p { margin-bottom: 1rem; }
+
+    /* Author Bio */
+    .author-box {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: var(--light-bg);
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+    }
+    .author-box img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .author-info h4 {
+      margin-bottom: 0.3rem;
+      color: var(--brand-color);
+    }
+    .author-info p {
+      font-size: 0.9rem;
+      color: var(--muted-text);
+    }
+    .author-info a {
+      text-decoration: none;
+      color: var(--accent-color);
+      font-size: 0.9rem;
+    }
+
+    /* Related Posts */
+    .related { margin-top: 2rem; }
+    .related h3 {
+      margin-bottom: 1rem;
+      color: var(--brand-color);
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.2rem;
+    }
+    .card {
+      background: var(--light-bg);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card .meta { padding: 0.8rem; }
+    .card h4 {
+      color: var(--brand-color);
+      margin-bottom: 0.3rem;
+    }
+    .card p {
+      font-size: 0.85rem;
+      color: var(--muted-text);
+      margin-bottom: 0.5rem;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--accent-color);
+      color: #fff;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: background 0.3s;
+    }
+    .btn:hover { background: #023e8a; }
+
+    footer {
+      background: var(--brand-color);
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Travel Blog</h1>
+  </header>
+
+  <div class="container">
+    <div class="post-header">
+      <h2>Trekking in Patagonia</h2>
+      <p class="info">By Sarah • August 5, 2025</p>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop"
+         alt="Patagonia Trek" class="post-image">
+
+    <div class="post-content">
+      <p>Patagonia, the southernmost region of South America, is a land of glaciers, windswept plains, and dramatic mountain ranges. Trekking here is unlike anywhere else in the world — vast open spaces and towering peaks await the adventurous traveler.</p>
+
+      <p>The most famous trek is the “W” circuit in Torres del Paine National Park, where you’ll witness emerald lakes, granite towers, and glaciers. Trails are well-marked, and refugios (mountain lodges) make it possible to trek without carrying a tent.</p>
+
+      <p>For those seeking more solitude, the Fitz Roy range in Argentina offers challenging hikes with rewarding views of jagged peaks and turquoise lakes. Be prepared for unpredictable weather and strong winds — they’re part of the Patagonia experience!</p>
+
+      <p>Trekking in Patagonia requires planning, but the reward is an unforgettable adventure at the edge of the world.</p>
+    </div>
+
+    <!-- Author Bio -->
+    <div class="author-box">
+      <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Author Sarah">
+      <div class="author-info">
+        <h4>Sarah Explorer</h4>
+        <p>Outdoor enthusiast and travel blogger who loves mountains, wildlife, and sharing stories from remote corners of the globe.</p>
+        <a href="#">Follow on Twitter</a>
+      </div>
+    </div>
+
+    <!-- Related Posts -->
+    <div class="related">
+      <h3>Related Posts</h3>
+      <div class="related-grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Bali Temple">
+          <div class="meta">
+            <h4>Exploring Ubud Temples</h4>
+            <p>Discover the hidden temples and rice terraces of Ubud, Bali.</p>
+            <a href="ubud-post.html" class="btn">Read More</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1544511916-0148ccdeb877?q=80&w=800&auto=format&fit=crop" alt="Tokyo Food">
+          <div class="meta">
+            <h4>Tokyo Food Adventures</h4>
+            <p>From sushi to ramen, explore Tokyo’s vibrant food culture.</p>
+            <a href="tokyo-food.html" class="btn">Read More</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Travel Blog — All Rights Reserved</p>
+  </footer>
+</body>
+</html>

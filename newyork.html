@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>New York City Adventures — Travel Blog</title>
+  <style>
+    :root{
+      --brand-color:#0077b6;
+      --accent-color:#0284c7;
+      --light-bg:#f0f8ff;
+      --text:#222;
+      --muted:#5d6d7a;
+      --card:#ffffff;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family: "Segoe UI", Roboto, Arial, sans-serif;line-height:1.65;color:var(--text);background:#fff}
+    .container{width:90%;max-width:900px;margin:0 auto;padding:1.25rem}
+
+    header{background:var(--brand-color);color:#fff;padding:1rem 0;text-align:center}
+    header h1{font-size:1.6rem}
+
+    .post-header{margin:1.5rem 0;text-align:center}
+    .post-header h2{color:var(--brand-color);margin-bottom:.35rem}
+    .post-header .info{color:var(--muted);font-size:.95rem}
+
+    .post-image{width:100%;border-radius:10px;display:block;margin:1rem 0;height:420px;object-fit:cover}
+
+    .post-content{background:var(--card);padding:1rem 1.15rem;border-radius:10px;box-shadow:0 6px 20px rgba(2,6,23,.06);margin-bottom:1.25rem}
+    .post-content p{margin-bottom:1rem;color:var(--text)}
+
+    .author-box{display:flex;gap:1rem;align-items:center;background:var(--light-bg);padding:1rem;border-radius:10px;margin-bottom:1.5rem}
+    .author-box img{width:80px;height:80px;border-radius:50%;object-fit:cover}
+    .author-info h4{color:var(--brand-color);margin-bottom:.25rem}
+    .author-info p{color:var(--muted);font-size:.95rem;margin-bottom:.4rem}
+    .author-info a{color:var(--accent-color);text-decoration:none;font-weight:600}
+
+    .related{margin-top:1rem}
+    .related h3{color:var(--brand-color);margin-bottom:.75rem}
+    .related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+    .card{background:var(--card);border-radius:10px;overflow:hidden;box-shadow:0 6px 18px rgba(2,6,23,.06);transition:transform .25s}
+    .card:hover{transform:translateY(-6px)}
+    .card img{width:100%;height:140px;object-fit:cover;display:block}
+    .card .meta{padding:.7rem}
+    .card h4{color:var(--brand-color);margin-bottom:.3rem;font-size:1rem}
+    .card p{color:var(--muted);font-size:.9rem;margin-bottom:.6rem}
+
+    .btn{display:inline-block;background:var(--accent-color);color:#fff;padding:.45rem .8rem;border-radius:8px;text-decoration:none;font-size:.95rem}
+    .btn:hover{background:#025f8f}
+
+    footer{background:var(--brand-color);color:#fff;text-align:center;padding:1rem;margin-top:2rem}
+    @media (max-width:640px){
+      .post-image{height:240px}
+      .author-box{flex-direction:row;align-items:center}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Travel Blog</h1>
+  </header>
+
+  <main class="container">
+    <!-- Post Header -->
+    <div class="post-header">
+      <h2>New York City Adventures</h2>
+      <p class="info">By Admin • September 16, 2025 • New York</p>
+    </div>
+
+    <!-- Hero Image -->
+    <img class="post-image"
+         src="https://images.unsplash.com/photo-1534430480872-3498386e7856?q=80&w=1400&auto=format&fit=crop"
+         alt="New York City Skyline with Empire State Building" />
+
+    <!-- Post Content -->
+    <article class="post-content">
+      <p>New York City is a place that never sleeps. From the bright lights of Times Square to the quiet paths of Central Park, NYC offers an unmatched mix of culture, food, and entertainment. Every neighborhood feels like its own world waiting to be discovered.</p>
+
+      <p>Top highlights include walking across the Brooklyn Bridge, exploring the art at the Met, and catching the skyline views from the Top of the Rock. For a local vibe, wander around Greenwich Village or the High Line — a park built on old elevated train tracks.</p>
+
+      <p>Food lovers can enjoy everything from Michelin-star dining to iconic street food like hot dogs and bagels. Don’t miss Chinatown’s dumplings or authentic pizza in Brooklyn.</p>
+
+      <p>Practical tips: wear comfortable shoes — you’ll walk a lot. Buy a MetroCard for easy subway access, and plan for at least 3–4 days to explore properly.</p>
+    </article>
+
+    <!-- Author Bio -->
+    <section class="author-box" aria-labelledby="author-name">
+      <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Author photo — James" />
+      <div class="author-info">
+        <h4 id="author-name">James Carter</h4>
+        <p>Urban explorer and food blogger. I love uncovering hidden gems in big cities and sharing authentic local experiences.</p>
+        <a href="#" target="_blank" rel="noopener">Follow on Instagram</a>
+      </div>
+    </section>
+
+    <!-- Related Posts -->
+    <section class="related" aria-labelledby="related-heading">
+      <h3 id="related-heading">Related Posts</h3>
+      <div class="related-grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?q=80&w=800&auto=format&fit=crop" alt="London Big Ben" />
+          <div class="meta">
+            <h4>London Calling</h4>
+            <p>History, theater, and iconic landmarks in the UK capital.</p>
+            <a class="btn" href="london.html">Read More</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?q=80&w=800&auto=format&fit=crop" alt="Paris Eiffel Tower" />
+          <div class="meta">
+            <h4>Paris in Spring</h4>
+            <p>The romance of the Eiffel Tower and hidden cafés.</p>
+            <a class="btn" href="paris.html">Read More</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1544511916-0148ccdeb877?q=80&w=800&auto=format&fit=crop" alt="Tokyo Street Food" />
+          <div class="meta">
+            <h4>Tokyo Food Adventures</h4>
+            <p>A journey through sushi bars, ramen shops, and night markets.</p>
+            <a class="btn" href="tokyo.html">Read More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Travel Blog — All Rights Reserved</p>
+  </footer>
+</body>
+</html>

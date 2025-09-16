@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Blog — Blog Section</title>
+  <style>
+    :root {
+      --brand-color: #0077b6;
+      --accent-color: #0096c7;
+      --light-bg: #f7f9fa;
+      --dark-text: #333;
+      --muted-text: #555;
+    }
+
+    * {margin:0; padding:0; box-sizing:border-box;}
+
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      line-height: 1.6;
+      background: #fff;
+      color: var(--dark-text);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      background: var(--brand-color);
+      color: #fff;
+      padding: 1rem 0;
+    }
+    header h1 {
+      text-align:center;
+    }
+
+    .search-bar {
+      margin: 1rem auto;
+      text-align:center;
+    }
+    .search-bar input {
+      width: 60%;
+      padding: 0.5rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .categories {
+      text-align:center;
+      margin: 1.5rem 0;
+    }
+    .categories button {
+      margin: 0.3rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 20px;
+      background: var(--light-bg);
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .categories button:hover {
+      background: var(--accent-color);
+      color:#fff;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--light-bg);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card .meta {
+      padding: 1rem;
+    }
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--brand-color);
+    }
+    .card .info {
+      font-size: 0.9rem;
+      color: var(--muted-text);
+      margin-bottom: 0.5rem;
+    }
+    .card .excerpt {
+      color: var(--dark-text);
+      margin-bottom: 0.8rem;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--accent-color);
+      color: #fff;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #023e8a;
+    }
+
+    footer {
+      background: var(--brand-color);
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Travel Blog</h1>
+  </header>
+
+  <div class="container">
+    <div class="search-bar">
+      <input type="text" placeholder="Search blog posts...">
+    </div>
+
+    <div class="categories">
+      <button>Adventure</button>
+      <button>Cultural</button>
+      <button>Food & Drink</button>
+      <button>Travel Tips</button>
+    </div>
+
+    <div class="blog-grid">
+      <article class="card">
+        <img src="https://plus.unsplash.com/premium_photo-1677829177642-30def98b0963?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFsaSUyMHRlbXBsZXxlbnwwfHwwfHx8MA%3D%3D" alt="Bali Temple">
+        <div class="meta">
+          <h3>Exploring Ubud Temples</h3>
+          <p class="info">By Admin • July 12, 2025</p>
+          <p class="excerpt">Discover the hidden temples and rice terraces of Ubud, Bali...</p>
+          <a href="bali.html" class="btn">Read More</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800&auto=format&fit=crop" alt="Patagonia">
+        <div class="meta">
+          <h3>Trekking in Patagonia</h3>
+          <p class="info">By Sarah • Aug 5, 2025</p>
+          <p class="excerpt">Patagonia is a dream for trekkers, offering glaciers, mountains, and pristine trails...</p>
+          <a href="trekking.html" class="btn">Read More</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1544511916-0148ccdeb877?q=80&w=800&auto=format&fit=crop" alt="Tokyo Food">
+        <div class="meta">
+          <h3>Tokyo Food Adventures</h3>
+          <p class="info">By Kenji • Sept 1, 2025</p>
+          <p class="excerpt">From sushi to ramen, discover Tokyo’s hidden food gems in this culinary journey...</p>
+          <a href="tokyo.html" class="btn">Read More</a>
+        </div>
+      </article>
+
+       <article class="card">
+        <img src="https://images.unsplash.com/photo-1596889590437-01f417641d20?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8UGFyaXMlMjBDaXR5JTIwTGlnaHRzfGVufDB8fDB8fHww" alt="Paris">
+        <div class="meta">
+          <h3>Paris City Lights</h3>
+          <p class="info">By Marie • Sept 10, 2025</p>
+          <p class="excerpt">Experience the romance of Paris, from the Eiffel Tower to hidden cafés...</p>
+          <a href="paris.html" class="btn">Read More</a>
+        </div>
+      </article>
+
+       <article class="card">
+        <img src="https://media.istockphoto.com/id/1223569445/photo/a-holiday-couple-in-white-summer-clothing-walks-down-a-paradise-beach.webp?a=1&b=1&s=612x612&w=0&k=20&c=XsIGOvWI5F035Yn--mtHViNXNpeh8bk4RDOO7OZmobA=" alt="Maldives">
+        <div class="meta">
+          <h3>Maldives Paradise Escape</h3>
+          <p class="info">By Admin • Sept 15, 2025</p>
+          <p class="excerpt">Crystal-clear waters, sandy beaches, and ultimate relaxation await you...</p>
+          <a href="maldives.html" class="btn">Read More</a>
+        </div>
+      </article>
+
+        <article class="card">
+        <img src="https://plus.unsplash.com/premium_photo-1697730150275-dba1cfe8af9c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TmV3JTIwWW9yayUyMENpdHklMjBWaWJlc3xlbnwwfHwwfHx8MA%3D%3D" alt="New York">
+        <div class="meta">
+          <h3>New York City Vibes</h3>
+          <p class="info">By John • Sept 16, 2025</p>
+          <p class="excerpt">From Times Square to Central Park, explore the energy of NYC...</p>
+          <a href="newyork.html" class="btn">Read More</a>
+        </div>
+      </article>
+
+        <article class="card">
+        <img src="https://plus.unsplash.com/premium_photo-1661964149725-fbf14eabd38c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8U2FudG9yaW5pJTIwU3Vuc2V0c3xlbnwwfHwwfHx8MA%3D%3D" alt="Santorini">
+        <div class="meta">
+          <h3>Santorini Sunsets</h3>
+          <p class="info">By Anna • Sept 18, 2025</p>
+          <p class="excerpt">The stunning cliffs, blue domes, and romantic sunsets of Santorini...</p>
+          <a href="santorini.html" class="btn">Read More</a>
+        </div>
+      </article>
+
+         <article class="card">
+        <img src="https://plus.unsplash.com/premium_photo-1682097650836-ac1b9d6d5e47?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8RHViYWklMjBEZXNlcnQlMjBTYWZhcml8ZW58MHx8MHx8fDA%3D" alt="Dubai">
+        <div class="meta">
+          <h3>Dubai Desert Safari</h3>
+          <p class="info">By Ahmed • Sept 20, 2025</p>
+          <p class="excerpt">Ride through golden dunes and enjoy a magical desert night in Dubai...</p>
+          <a href="dubai.html" class="btn">Read More</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1658248709065-975df94f6e22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Um9tZSVFMiU4MCU5OXMlMjBBbmNpZW50JTIwV29uZGVyc3xlbnwwfHwwfHx8MA%3D%3D" alt="Rome">
+        <div class="meta">
+          <h3>Rome’s Ancient Wonders</h3>
+          <p class="info">By Luca • Sept 22, 2025</p>
+          <p class="excerpt">Walk through history with the Colosseum, Roman Forum, and ancient ruins...</p>
+          <a href="rome.html" class="btn">Read More</a>
+        </div>
+      </article>
+
+       <article class="card">
+        <img src="https://images.unsplash.com/photo-1488415032361-b7e238421f1b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8SWNlbGFuZCUyME5vcnRoZXJuJTIwTGlnaHRzfGVufDB8fDB8fHww" alt="Iceland">
+        <div class="meta">
+          <h3>Iceland Northern Lights</h3>
+          <p class="info">By Eva • Sept 25, 2025</p>
+          <p class="excerpt">Witness the magical Aurora Borealis dancing in Iceland’s skies...</p>
+          <a href="iceland.html" class="btn">Read More</a>
+        </div>
+      </article>
+
+       <article class="card">
+        <img src="https://plus.unsplash.com/premium_photo-1665203527829-66af6979573d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8QmFuZ2tvayUyMFN0cmVldCUyMExpZmV8ZW58MHx8MHx8fDA%3D" alt="Bangkok">
+        <div class="meta">
+          <h3>Bangkok Street Life</h3>
+          <p class="info">By Somchai • Sept 26, 2025</p>
+          <p class="excerpt">Markets, temples, and vibrant street food in Thailand’s capital...</p>
+          <a href="bangkok.html" class="btn">Read More</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://plus.unsplash.com/premium_photo-1697730227942-06fcfd8a6866?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8U3lkbmV5JTIwSGFyYm91ciUyMEVzY2FwZXxlbnwwfHwwfHx8MA%3D%3D" alt="Sydney">
+        <div class="meta">
+          <h3>Sydney Harbour Escape</h3>
+          <p class="info">By Olivia • Sept 28, 2025</p>
+          <p class="excerpt">Explore the iconic Opera House, beaches, and laid-back vibes of Sydney...</p>
+          <a href="sydney.html" class="btn">Read More</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Travel Blog — All Rights Reserved</p>
+  </footer>
+</body>
+</html>

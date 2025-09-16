@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sydney Harbour Adventures - Travel Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f4f9ff;
+      color: #333;
+    }
+
+    header {
+      background: #005f99;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .container img.hero {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    article h2 {
+      color: #005f99;
+      margin-top: 0;
+    }
+
+    article p {
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    .author {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      padding: 15px;
+      background: #e6f3ff;
+      border-radius: 6px;
+    }
+
+    .author img {
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    .related {
+      margin-top: 40px;
+    }
+
+    .related h3 {
+      color: #005f99;
+      margin-bottom: 15px;
+    }
+
+    .related-posts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card .info {
+      padding: 15px;
+    }
+
+    .card h4 {
+      margin: 0 0 10px;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: #005f99;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background: #005f99;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sydney Harbour Adventures</h1>
+    <p>By Daniel • Sept 15, 2025</p>
+  </header>
+
+  <div class="container">
+    <img src="https://plus.unsplash.com/premium_photo-1697730227942-06fcfd8a6866?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8U3lkbmV5JTIwSGFyYm91ciUyMEFkdmVudHVyZXN8ZW58MHx8MHx8fDA%3D" alt="Sydney Harbour" class="hero">
+
+    <article>
+      <h2>Discovering Sydney's Vibrant Harbour</h2>
+      <p>Sydney, Australia’s dazzling harbour city, is famous for its sparkling waters, iconic landmarks, and lively coastal lifestyle. Whether you're exploring the Opera House, climbing the Harbour Bridge, or strolling along Circular Quay, Sydney is a feast for the senses.</p>
+      <p>Ferries glide across the harbour, connecting visitors to hidden coves, beaches, and seaside neighborhoods. Darling Harbour offers world-class dining and entertainment, while Bondi Beach showcases the city’s surf culture and laid-back vibes.</p>
+      <p>For panoramic views, a climb up the Harbour Bridge or a cruise around the bay offers breathtaking perspectives of this spectacular cityscape.</p>
+      <p>Sydney is more than its skyline—it’s a blend of urban sophistication and natural beauty, making it a must-visit destination for travelers around the globe.</p>
+    </article>
+
+    <div class="author">
+      <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Author Daniel">
+      <div>
+        <h4>Daniel</h4>
+        <p>Adventure traveler and storyteller. Daniel loves exploring cities by the water and capturing their energy through photography and writing.</p>
+      </div>
+    </div>
+
+    <div class="related">
+      <h3>Related Posts</h3>
+      <div class="related-posts">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop" alt="Maldives">
+          <div class="info">
+            <h4>Maldives Paradise</h4>
+            <p>Experience the turquoise waters and luxury retreats of the Maldives islands...</p>
+            <a href="maldives.html">Read More</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=800&auto=format&fit=crop" alt="Patagonia">
+          <div class="info">
+            <h4>Trekking in Patagonia</h4>
+            <p>Adventure through glaciers, mountains, and pristine trails in Patagonia...</p>
+            <a href="patagonia.html">Read More</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1533681706738-8b91f25f0c56?q=80&w=800&auto=format&fit=crop" alt="Tokyo">
+          <div class="info">
+            <h4>Tokyo Food Adventures</h4>
+            <p>Dive into Japan’s vibrant culinary capital, from sushi to street snacks...</p>
+            <a href="tokyo.html">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Wanderlust Diaries | All Rights Reserved</p>
+  </footer>
+</body>
+</html>

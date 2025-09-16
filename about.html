@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Blog — About Us</title>
+  <style>
+    :root {
+      --brand-color: #1d4ed8;   /* Blue */
+      --accent-color: #3b82f6;
+      --light-bg: #f0f7ff;
+      --dark-text: #2b2b2b;
+      --muted-text: #555;
+    }
+
+    * {margin:0; padding:0; box-sizing:border-box;}
+
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: #fff;
+      color: var(--dark-text);
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--brand-color);
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    header h1 { font-size: 1.8rem; }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 0;
+    }
+
+    /* Mission Section */
+    .mission {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .mission h2 {
+      color: var(--brand-color);
+      margin-bottom: 1rem;
+    }
+    .mission p {
+      color: var(--muted-text);
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* Team Section */
+    .team {
+      margin-top: 2rem;
+    }
+    .team h2 {
+      text-align: center;
+      color: var(--brand-color);
+      margin-bottom: 2rem;
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .team-card {
+      background: var(--light-bg);
+      border-radius: 12px;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .team-card:hover { transform: translateY(-5px); }
+    .team-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      object-fit: cover;
+    }
+    .team-card h3 {
+      color: var(--brand-color);
+      margin-bottom: 0.5rem;
+    }
+    .team-card p {
+      font-size: 0.9rem;
+      color: var(--muted-text);
+      margin-bottom: 0.8rem;
+    }
+    .team-card a {
+      text-decoration: none;
+      color: var(--accent-color);
+      font-size: 0.9rem;
+    }
+
+    footer {
+      background: var(--brand-color);
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Us</h1>
+  </header>
+
+  <div class="container">
+    <!-- Mission Section -->
+    <section class="mission">
+      <h2>Our Mission</h2>
+      <p>At Travel Blog, we believe that travel is more than just visiting new places — it’s about discovering cultures, creating memories, and sharing stories that inspire others. Our mission is to make travel accessible and enjoyable for everyone by bringing authentic experiences to light.</p>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+      <h2>Meet Our Team</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah">
+          <h3>Sarah Johnson</h3>
+          <p>Adventure traveler & photographer. Loves trekking in remote mountains and capturing hidden landscapes.</p>
+          <a href="#">Follow on Instagram</a>
+        </div>
+        <div class="team-card">
+          <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Kenji">
+          <h3>Kenji Yamamoto</h3>
+          <p>Foodie & cultural explorer based in Tokyo. Writes about street food, traditions, and hidden gems.</p>
+          <a href="#">Follow on Twitter</a>
+        </div>
+        <div class="team-card">
+          <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="David">
+          <h3>David Miller</h3>
+          <p>Travel tips expert helping backpackers and solo travelers plan affordable, safe, and fun journeys.</p>
+          <a href="#">Connect on LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Travel Blog — All Rights Reserved</p>
+  </footer>
+</body>
+</html>

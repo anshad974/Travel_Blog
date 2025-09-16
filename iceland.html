@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Iceland’s Natural Wonders — Travel Blog</title>
+  <style>
+    :root{
+      --brand-color:#0077b6;
+      --accent-color:#0096c7;
+      --light-bg:#f1f9ff;
+      --text:#222;
+      --muted:#666;
+      --card:#fff;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:"Segoe UI",Arial,sans-serif;line-height:1.65;color:var(--text);background:#fff}
+    .container{width:90%;max-width:900px;margin:auto;padding:1.25rem}
+
+    header{background:var(--brand-color);color:#fff;text-align:center;padding:1rem 0}
+    header h1{font-size:1.6rem}
+
+    .post-header{text-align:center;margin:1.5rem 0}
+    .post-header h2{color:var(--brand-color);margin-bottom:.4rem}
+    .post-header .info{font-size:.9rem;color:var(--muted)}
+
+    .post-image{width:100%;border-radius:10px;display:block;margin:1rem 0;max-height:420px;object-fit:cover}
+
+    .post-content{background:var(--card);padding:1rem 1.15rem;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.06);margin-bottom:1.5rem}
+    .post-content p{margin-bottom:1rem}
+
+    .author-box{display:flex;gap:1rem;align-items:center;background:var(--light-bg);padding:1rem;border-radius:10px;margin-bottom:1.5rem}
+    .author-box img{width:80px;height:80px;border-radius:50%;object-fit:cover}
+    .author-info h4{color:var(--brand-color);margin-bottom:.3rem}
+    .author-info p{font-size:.9rem;color:var(--muted);margin-bottom:.4rem}
+    .author-info a{color:var(--accent-color);text-decoration:none;font-weight:600}
+
+    .related{margin-top:1rem}
+    .related h3{color:var(--brand-color);margin-bottom:.75rem}
+    .related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+    .card{background:var(--card);border-radius:10px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.08);transition:transform .25s}
+    .card:hover{transform:translateY(-6px)}
+    .card img{width:100%;height:140px;object-fit:cover;display:block}
+    .card .meta{padding:.7rem}
+    .card h4{color:var(--brand-color);margin-bottom:.25rem}
+    .card p{font-size:.85rem;color:var(--muted);margin-bottom:.5rem}
+
+    .btn{display:inline-block;background:var(--accent-color);color:#fff;padding:.45rem .8rem;border-radius:6px;text-decoration:none;font-size:.9rem}
+    .btn:hover{background:#025f8f}
+
+    footer{background:var(--brand-color);color:#fff;text-align:center;padding:1rem;margin-top:2rem}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Travel Blog</h1>
+  </header>
+
+  <main class="container">
+    <!-- Post Header -->
+    <div class="post-header">
+      <h2>Iceland’s Natural Wonders</h2>
+      <p class="info">By Admin • September 16, 2025 • Iceland</p>
+    </div>
+
+    <!-- Hero Image -->
+    <img class="post-image"
+         src="https://images.unsplash.com/photo-1735606583158-722c9c210810?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8SWNlbGFuZCVFMiU4MCU5OXMlMjBOYXR1cmFsJTIwV29uZGVyc3xlbnwwfHwwfHx8MA%3D%3D"
+         alt="Iceland landscape with waterfalls and mountains" />
+
+    <!-- Post Content -->
+    <article class="post-content">
+      <p>Iceland is a land of fire and ice, where glaciers, volcanoes, and dramatic landscapes exist side by side. From cascading waterfalls to geothermal hot springs, the country offers breathtaking natural beauty at every turn.</p>
+
+      <p>One of the highlights is the Golden Circle, featuring the powerful Gullfoss waterfall, the erupting geysers of Strokkur, and the historic Þingvellir National Park. Beyond that, the black sand beaches of Reynisfjara and the Northern Lights are unforgettable sights.</p>
+
+      <p>Adventurers can hike on glaciers, relax in the Blue Lagoon, or explore ice caves during the winter months. No matter the season, Iceland provides a surreal travel experience that feels otherworldly.</p>
+
+      <p>Tip: Rent a car and take a road trip along the Ring Road for the ultimate Icelandic adventure.</p>
+    </article>
+
+    <!-- Author Bio -->
+    <section class="author-box">
+      <img src="https://randomuser.me/api/portraits/men/47.jpg" alt="Author photo — Erik">
+      <div class="author-info">
+        <h4>Erik Jónsson</h4>
+        <p>Icelandic guide and storyteller passionate about nature, photography, and uncovering the country’s hidden gems.</p>
+        <a href="#">Follow on Instagram</a>
+      </div>
+    </section>
+
+    <!-- Related Posts -->
+    <section class="related">
+      <h3>Related Posts</h3>
+      <div class="related-grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZHViYWl8ZW58MHx8MHx8fDA%3D" alt="Dubai skyline">
+          <div class="meta">
+            <h4>Dubai Adventures</h4>
+            <p>Discover futuristic skylines and luxury experiences in Dubai.</p>
+            <a href="dubai.html" class="btn">Read More</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=800&auto=format&fit=crop" alt="New York skyline">
+          <div class="meta">
+            <h4>New York Highlights</h4>
+            <p>From Times Square to Central Park, the city never sleeps.</p>
+            <a href="newyork.html" class="btn">Read More</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1544511916-0148ccdeb877?q=80&w=800&auto=format&fit=crop" alt="Tokyo food">
+          <div class="meta">
+            <h4>Tokyo Food Adventures</h4>
+            <p>Savor sushi, ramen, and street food in the heart of Tokyo.</p>
+            <a href="tokyo.html" class="btn">Read More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Travel Blog — All Rights Reserved</p>
+  </footer>
+</body>
+</html>

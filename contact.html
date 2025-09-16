@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Blog — Contact</title>
+  <style>
+    :root {
+      --brand-color: #1d4ed8;   /* Blue */
+      --accent-color: #3b82f6;
+      --light-bg: #f0f7ff;
+      --dark-text: #2b2b2b;
+      --muted-text: #555;
+    }
+
+    * {margin:0; padding:0; box-sizing:border-box;}
+
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: #fff;
+      color: var(--dark-text);
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--brand-color);
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    header h1 { font-size: 1.8rem; }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 0;
+    }
+
+    /* Contact Section */
+    .contact-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .contact-header h2 {
+      color: var(--brand-color);
+      margin-bottom: 0.5rem;
+    }
+    .contact-header p {
+      color: var(--muted-text);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+
+    /* Form */
+    form {
+      background: var(--light-bg);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    form label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    form textarea { resize: vertical; min-height: 120px; }
+    form button {
+      background: var(--accent-color);
+      color: #fff;
+      border: none;
+      padding: 0.7rem 1.2rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    form button:hover { background: #0f3460; }
+
+    /* Contact Info */
+    .contact-info {
+      padding: 1rem;
+    }
+    .contact-info h3 {
+      color: var(--brand-color);
+      margin-bottom: 1rem;
+    }
+    .contact-info p {
+      margin-bottom: 0.5rem;
+      color: var(--muted-text);
+    }
+    .social-links a {
+      display: inline-block;
+      margin-right: 0.5rem;
+      text-decoration: none;
+      background: var(--accent-color);
+      color: #fff;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      transition: background 0.3s;
+    }
+    .social-links a:hover {
+      background: #0f3460;
+    }
+
+    footer {
+      background: var(--brand-color);
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  <div class="container">
+    <div class="contact-header">
+      <h2>Get in Touch</h2>
+      <p>We’d love to hear from you! Send us a message or connect via our social media channels.</p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Contact Form -->
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your Email" required>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" placeholder="Subject">
+
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><strong>Email:</strong> info@travelblog.com</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Address:</strong> 123 Travel Street, Kochi, India</p>
+
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Travel Blog — All Rights Reserved</p>
+  </footer>
+</body>
+</html>
